@@ -1,0 +1,200 @@
+
+/* ----------Common styles---------- */
+*{
+    margin: 0px;
+}
+.common-btn{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #ff5959;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.common-tittle{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 50px 0px 20px 0px;
+}
+.common-text{
+    font-size: 1.125rem;
+    font-weight: 500;
+    opacity: 0.8;
+    margin: 0px 0px 25px 0px;
+}
+
+/* ----------Header styles---------- */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(0deg, rgb(0,0,0)0%,rgba(24,24,24,0)100%),url('../images/donation13.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header div{
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 250px;
+}
+.header-tittle{
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 30px 0px;
+}
+.header-text{
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* ----------Donate styles---------- */
+.taka{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    padding: 10px 200px;
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.amount{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.tk{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border: none;
+    margin-right: 25px;  
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tk:hover{
+    color: #ff5959;
+    border: 2px solid #ff5959;
+    background-color: #ffeeee;
+}
+
+/* .tk:active{
+    color: #ff5959;
+    border: 2px solid #ff5959;
+    background-color: #ffeeee;
+} */
+
+/* ----------Update styles---------- */
+.update,
+.plan,
+#donate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 50px;
+}
+.subscribe{
+    width: 700px;
+    height: 200px;
+    background-color: #fff4d6;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-email{
+    background-color: #d0d0d0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 6px 0px 0px 6px;
+
+}
+.sub-btn{
+    background-color: #ff5959;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    margin-left: -5px;
+}
+
+/* ----------Footer Styles---------- */
+footer{
+    height: 150px;
+    background-color: #0b0d17;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+footer h3{
+    color: #ff5959;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+
+
+
+/* ----------Responsive Styles for small device---------- */
+@media screen and (max-width: 576px) {
+    header div{
+        margin: 0px 20px;
+    }
+    .taka{
+        padding: 10px 50px;
+    }
+    .subscribe{
+        width: 325px;
+    }
+    .amount{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        gap: 20px;
+    }
+    .amount-box{
+        margin: 0px 50px;
+    }
+    .tk{
+        margin-right: 0px;
+    }
+}
