@@ -97,10 +97,22 @@ header div{
     border: 2px solid #ff5959;
     background-color: #ffeeee;
 }
+.tk:active{
+    color: #ff5959;
+    border: 2px solid #ff5959;
+    background-color: #ffeeee;
+}
 
 /* ----------Update styles---------- */
 .update,
-.plan,
+.plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 50px;
+}
 #donate{
     display: flex;
     flex-direction: column;
@@ -180,15 +192,16 @@ footer p{
         width: 325px;
     }
     .amount{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        display: flex;
         justify-content: center;
-        gap: 20px;
+        flex-wrap: wrap;
     }
     .amount-box{
         margin: 0px 50px;
     }
     .tk{
-        margin-right: 0px;
+        margin-top: 20px;
+        margin-right: 20px;
     }
+    
 }
