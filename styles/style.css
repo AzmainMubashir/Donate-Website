@@ -1,3 +1,42 @@
+/* ----------Fonts---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:itall,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+  }
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+  }
+
+.lobster{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.manrope{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 /* ----------Common styles---------- */
 *{
@@ -5,7 +44,7 @@
 }
 .common-btn{
     color: white;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     background-color: #ff5959;
     border: none;
@@ -15,14 +54,14 @@
     cursor: pointer;
 }
 .common-tittle{
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 2.8rem;
+    font-weight: 700;
     margin: 50px 0px 20px 0px;
 }
 .common-text{
-    font-size: 1.125rem;
-    font-weight: 500;
-    opacity: 0.8;
+    color:rgb(112, 112, 112);
+    font-size: 1.075rem;
+    font-weight: 400;
     margin: 0px 0px 25px 0px;
 }
 
@@ -48,7 +87,7 @@ header div{
 .header-tittle{
     color: white;
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 700;
     margin: 30px 0px;
 }
 .header-text{
@@ -103,6 +142,66 @@ header div{
     background-color: #ffeeee;
 }
 
+/* -----------Plan styles---------- */
+.plan-card-box{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.plan-card-box div{
+    display: flex;
+    margin-right: 25px;
+}
+.plan-card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    margin: 60px 0px 50px 30px;
+}
+.plan-card img{
+    width: 50px;
+}
+.plan-card h4{
+    font-size: 1.5rem;
+    margin: 30px 0px 15px 0px;
+    font-weight: 600;
+}
+.card-1{
+background-color: rgba(79, 157, 166, 0.1);
+border-radius: 5px;
+}
+.card-2{
+background-color: rgba(255, 89, 89, 0.1);
+border-radius: 5px;
+}
+.card-3{
+background-color: rgb(255, 244, 214);
+border-radius: 5px;
+}
+
+.slide-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.slide-1 img,.slide-2 img{
+    width: 450px;
+    border-radius: 5px;
+}
+.slide-1 div, .slide-2 div{
+    width: 500px;
+}
+.slide-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
 /* ----------Update styles---------- */
 .update,
 .plan{
@@ -133,9 +232,11 @@ header div{
     justify-content: center;
 }
 .sub-email{
+    width: 275px;
     background-color: #d0d0d0;
-    font-size: 0.8rem;
-    font-weight: 400;
+    color: rgb(170, 159, 159);
+    font-size: 1rem;
+    font-weight: 500;
     border: none;
     padding: 15px 20px;
     border-radius: 6px 0px 0px 6px;
@@ -144,8 +245,8 @@ header div{
 .sub-btn{
     background-color: #ff5959;
     color: white;
-    font-size: 0.8rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
     padding: 15px 25px;
     border: none;
     border-radius: 0px 6px 6px 0px;
@@ -191,6 +292,9 @@ footer p{
     .subscribe{
         width: 325px;
     }
+    .sub-email{
+        width: 140px;
+    }
     .amount{
         display: flex;
         justify-content: center;
@@ -203,5 +307,27 @@ footer p{
         margin-top: 20px;
         margin-right: 20px;
     }
-    
+    .plan-card-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .plan-card-box div{
+        margin-top: 25px;
+        margin-right: 0px;
+    }
+    .slide-1{
+        flex-direction: column;
+    }
+    .slide-2{
+        flex-direction: column-reverse;
+    }
+    .slide-1 div, .slide-2 div{
+        width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .slide-1 img,.slide-2 img{
+        width: 350px;
+    }
 }
