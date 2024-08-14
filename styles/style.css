@@ -287,7 +287,10 @@ footer p{
         margin: 0px 20px;
     }
     .taka{
+        width: 200px;
         padding: 10px 40px;
+        margin-left: 25px;
+        margin-right: 25px;
 
     }
     .subscribe{
